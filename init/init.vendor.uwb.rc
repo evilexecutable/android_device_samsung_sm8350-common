@@ -1,0 +1,58 @@
+
+# Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+#
+on post-fs-data
+# Permission for UWB driver
+    chmod 0660 /dev/sr100
+    chown uwb uwb /dev/sr100
+
+on property:sys.boot_completed=1
+    chmod 0660 /dev/sr100
+    chown uwb uwb /dev/sr100
+
+# uwb_factory
+    mkdir /efs/sec_efs/uwb_factory 0775 uwb uwb
+    chmod 0775 /efs/sec_efs/uwb_factory
+    chown uwb uwb /efs/sec_efs/uwb_factory
+    chown uwb uwb /efs/sec_efs/uwb_factory/5_M_1
+    chown uwb uwb /efs/sec_efs/uwb_factory/5_P_1
+    chown uwb uwb /efs/sec_efs/uwb_factory/5_RF_PLL
+    chown uwb uwb /efs/sec_efs/uwb_factory/9_M_1
+    chown uwb uwb /efs/sec_efs/uwb_factory/9_P_1
+    chown uwb uwb /efs/sec_efs/uwb_factory/9_RF_PLL
+    chown uwb uwb /efs/sec_efs/uwb_factory/5_landscape
+    chown uwb uwb /efs/sec_efs/uwb_factory/5_portrait
+    chown uwb uwb /efs/sec_efs/uwb_factory/9_landscape
+    chown uwb uwb /efs/sec_efs/uwb_factory/9_portrait
+    chown uwb uwb /efs/sec_efs/uwb_factory/AOA_CAL_DATA
+
+    mkdir /data/uwb/ 770 uwb system
+    copy /vendor/etc/uwb_key /data/vendor/uwb/Key
+    chmod 660 /data/vendor/uwb/Key
+    chown uwb uwb /data/vendor/uwb/Key

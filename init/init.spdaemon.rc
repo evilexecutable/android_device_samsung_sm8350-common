@@ -1,0 +1,24 @@
+on post-fs && property:ro.boot.product.vendor.sku=lahaina
+    mkdir /mnt/vendor/persist/iar_db 0770 system system
+    mkdir /mnt/vendor/persist/secnvm 0770 system system
+    wait /mnt/vendor/persist/secnvm
+    start vendor.spdaemon
+    start vendor.sec_nvm
+
+on post-fs && property:ro.boot.product.vendor.sku=taro
+    mkdir /mnt/vendor/persist/secnvm 0770 system system
+    wait /mnt/vendor/persist/secnvm
+    mkdir /mnt/vendor/persist/iar_db 0770 system system
+    start vendor.spdaemon
+    start vendor.sec_nvm
+
+service vendor.spdaemon /vendor/bin/spdaemon
+    class core
+    user system
+    group system
+    shutdown critical
+
+service vendor.sec_nvm /vendor/bin/sec_nvm
+    class core
+    user system
+    group system

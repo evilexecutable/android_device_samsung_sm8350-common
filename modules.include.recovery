@@ -1,0 +1,9 @@
+sec_tsp_log.ko
+sec_tclm_v2.ko
+sec_secure_touch.ko
+sec_common_fn.ko
+sec_tsp_dumpkey.ko
+sec_cmd.ko
+sec_virtual_tsp.ko
+stm_ts_spi.ko
+stm_ts.ko
