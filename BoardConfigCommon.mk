@@ -54,6 +54,12 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_LINUX_KERNEL_VERSION := 5.4
 
+# Use External DTC
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+	CONFIG_SECTION_MISMATCH_WARN_ONLY=y \
+	CONFIG_BUILD_ARM64_DT_OVERLAY=y \
+	LLVM=1 LLVM_IAS=1
+
 # Kernel flags
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket firmware_class.path=/vendor/firmware_mnt/image printk.devkmsg=on pcie_ports=compat cpuinfo.chipname=SM8350 panic=4
 BOARD_BOOT_HEADER_VERSION := 3
@@ -66,7 +72,8 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
-TARGET_KERNEL_NO_GCC := true
+
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
