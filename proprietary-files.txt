@@ -773,7 +773,7 @@ vendor/bin/ssr_diag
 vendor/bin/test_diag
 vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/vendor.qti.diag.rc
-vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+-vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib/libdiagjni.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsnsdiaglog.so
@@ -871,9 +871,9 @@ vendor/etc/init/hw/init.samsung.display.rc
 vendor/etc/init/init.qti.display_boot.rc
 vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc
 vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
-vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
+-vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
+-vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
+-vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
 vendor/lib64/hw/android.hardware.graphics.mapper@3.0-impl-qti-display.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so
 vendor/lib64/libdisplaydebug.so
@@ -1082,7 +1082,7 @@ vendor/etc/seccomp_policy/gnss@2.0-base.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy
-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
@@ -1207,7 +1207,7 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libpuresoftkeymasterdevice.so
 vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libskeymaster4device.so
+-vendor/lib64/libskeymaster4device.so
 
 # Listen
 vendor/lib/libcapiv2svacnn.so
@@ -1300,7 +1300,7 @@ vendor/etc/permissions/android.hardware.nfc.hce.xml
 vendor/etc/permissions/android.hardware.nfc.hcef.xml
 vendor/etc/permissions/android.hardware.nfc.uicc.xml
 vendor/etc/permissions/android.hardware.nfc.xml
-vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml
+-vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml
 vendor/firmware/mfc/mfc_fw_flash_s2miw04.bin
 vendor/firmware/nfc/libsn100u_fw.so
 vendor/lib64/nfc_nci_nxpsn.so
@@ -1312,7 +1312,7 @@ vendor/etc/public.libraries.txt
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib64/libQnnHtpAltPrepStub.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-gpu.so
@@ -1619,7 +1619,7 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
-vendor/etc/vintf/manifest/android.hardware.sensors@2.1-multihal.xml
+-vendor/etc/vintf/manifest/android.hardware.sensors@2.1-multihal.xml
 vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so
 vendor/lib/libsensorslog.so
 vendor/lib/sensors.flicker.so
@@ -1666,7 +1666,7 @@ vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-engine.conf
-vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/lib/libthermalclient.so
 vendor/lib/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/libthermalclient.so
@@ -1712,7 +1712,7 @@ vendor/etc/libuwb-uci.conf
 vendor/etc/permissions/android.hardware.uwb.xml
 vendor/etc/permissions/samsung.hardware.uwb.xml
 vendor/etc/uwb_key
-vendor/etc/vintf/manifest/uwb-service.xml
+-vendor/etc/vintf/manifest/uwb-service.xml
 
 # UWB firmware
 vendor/firmware/uwb/libsr100t_dev_fw.bin
@@ -1816,7 +1816,7 @@ vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
@@ -1855,10 +1855,10 @@ vendor/etc/permissions/android.hardware.wifi.direct.xml
 vendor/etc/permissions/android.hardware.wifi.passpoint.xml
 vendor/etc/permissions/android.hardware.wifi.rtt.xml
 vendor/etc/permissions/android.hardware.wifi.xml
-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
-vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
+-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
+-vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 vendor/etc/wifi/indoorchannel.info
@@ -2235,32 +2235,32 @@ vendor/etc/udc_data/udc_config.json
 vendor/etc/video_bokeh_data/SRIB_AcenetVideo_INT8_V004_eltadd_1443RC4_enh_cle_htp.dlc
 vendor/etc/video_bokeh_data/SRIB_MattingLive_INT8_V002_sm8250_snpe1390.dlc
 vendor/etc/video_bokeh_data/SRIB_VD_INT8_V001_sm8250_snpe1390.dlc
-vendor/etc/vintf/compatibility_matrix.xml
-vendor/etc/vintf/manifest_lahaina.xml
-vendor/etc/vintf/manifest_shima.xml
-vendor/etc/vintf/manifest_yupik.xml
-vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
-vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml
-vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
-vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.coral.xml
-vendor/etc/vintf/manifest/deviceManifest.xml
-vendor/etc/vintf/manifest/engmode_manifest.xml
-vendor/etc/vintf/manifest/hyper-default-sec.xml
-vendor/etc/vintf/manifest/lights-default-sec.xml
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
-vendor/etc/vintf/manifest/manifest.xml
-vendor/etc/vintf/manifest/mppserver.xml
-vendor/etc/vintf/manifest/power-samsung.xml
-vendor/etc/vintf/manifest/sec_c2_manifest_default0.xml
-vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.kg@1.1-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.snap@1.0-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
+-vendor/etc/vintf/compatibility_matrix.xml
+-vendor/etc/vintf/manifest_lahaina.xml
+-vendor/etc/vintf/manifest_shima.xml
+-vendor/etc/vintf/manifest_yupik.xml
+-vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
+-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
+-vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml
+-vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
+-vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.coral.xml
+-vendor/etc/vintf/manifest/deviceManifest.xml
+-vendor/etc/vintf/manifest/engmode_manifest.xml
+-vendor/etc/vintf/manifest/hyper-default-sec.xml
+-vendor/etc/vintf/manifest/lights-default-sec.xml
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
+-vendor/etc/vintf/manifest/manifest.xml
+-vendor/etc/vintf/manifest/mppserver.xml
+-vendor/etc/vintf/manifest/power-samsung.xml
+-vendor/etc/vintf/manifest/sec_c2_manifest_default0.xml
+-vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.kg@1.1-manifest.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.snap@1.0-manifest.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
 vendor/etc/vmmgr.conf
 vendor/etc/VslMesDetector/MesDetectorBlur.tflite
 vendor/etc/VslMesDetector/MesDetectorLowlight.tflite
