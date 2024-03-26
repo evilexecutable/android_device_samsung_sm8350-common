@@ -27,6 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Enforce generic ramdisk allow list
+# https://source.android.com/docs/core/architecture/partitions/generic-boot#option-2b
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # Setup dalvik vm configs
@@ -326,6 +327,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
+PRODUCT_PACKAGES += \
+    linker.recovery \
+    shell_and_utilities_recovery \
+    adbd.recovery
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
@@ -392,6 +398,12 @@ PRODUCT_COPY_FILES += \
 # Weaver
 PRODUCT_PACKAGES += \
     android.hardware.weaver@1.0.vendor
+
+# Vendor ramdisk
+PRODUCT_PACKAGES += \
+    linker.vendor_ramdisk \
+    shell_and_utilities_vendor_ramdisk \
+    adbd.vendor_ramdisk
 
 # Vendor service manager
 PRODUCT_PACKAGES += \

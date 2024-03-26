@@ -39,7 +39,6 @@ vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-# Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
@@ -140,6 +139,7 @@ ro.vendor.use_data_netmgrd=false
 
 # SoC
 ro.soc.manufacturer=QTI
+ro.soc.model=SM8350
 
 # USB
 sys.usb.mtp.batchcancel=1
